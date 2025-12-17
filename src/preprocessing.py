@@ -21,7 +21,7 @@ def load_and_preprocess_data(filepath, target_column='Churn', test_size=0.2, ran
     
     # Handle missing values in TotalCharges
     df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
-    df['TotalCharges'].fillna(df['TotalCharges'].median(), inplace=True)
+    df['TotalCharges'] = df['TotalCharges'].fillna(df['TotalCharges'].median())
     
     # Drop customerID as it's not a feature
     if 'customerID' in df.columns:
@@ -48,7 +48,11 @@ def load_and_preprocess_data(filepath, target_column='Churn', test_size=0.2, ran
     
     # Scale numerical features
     scaler = StandardScaler()
-    X_train = scaler.fit_transform(X_train)
-    X_test = scaler.transform(X_test)
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+    
+    # Convert back to DataFrame to preserve feature names
+    X_train = pd.DataFrame(X_train_scaled, columns=X.columns, index=X_train.index)
+    X_test = pd.DataFrame(X_test_scaled, columns=X.columns, index=X_test.index)
     
     return X_train, X_test, y_train, y_test

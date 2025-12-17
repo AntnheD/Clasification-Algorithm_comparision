@@ -1,0 +1,15 @@
+Category,Model,Accuracy,F1-Score,ROC-AUC
+Ensemble Models,AdaBoost,0.8062,0.6061,0.8602
+Ensemble Models,CatBoost,0.8133,0.6115,0.8582
+Ensemble Models,Gradient Boosting,0.8055,0.5861,0.858
+Ensemble Models,LightGBM,0.7991,0.5844,0.8521
+Distance & Kernel Models,SVM (Linear Kernel),0.8169,0.6272,0.8512
+Probabilistic & Neural Models,Gaussian Naive Bayes,0.758,0.6289,0.8429
+Ensemble Models,Random Forest,0.7963,0.5509,0.8377
+Ensemble Models,XGBoost,0.7942,0.5723,0.8365
+Probabilistic & Neural Models,MLP Classifier,0.7857,0.577,0.8188
+Distance & Kernel Models,SVM (RBF Kernel),0.807,0.5789,0.8132
+Ensemble Models,Extra Trees,0.7878,0.535,0.8006
+Distance & Kernel Models,K-Nearest Neighbors,0.758,0.5244,0.7785
+Tree-Based Models,Extra Tree,0.7253,0.5019,0.6606
+Tree-Based Models,Decision Tree,0.726,0.4961,0.6584
