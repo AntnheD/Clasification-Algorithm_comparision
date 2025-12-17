@@ -27,14 +27,8 @@
 
 ## 📋 Executive Summary
 
-This project presents a **comprehensive benchmark study** of **14 state-of-the-art classification algorithms** for predicting customer churn in the telecommunications industry. Customer churn prediction is a critical business problem—identifying at-risk customers enables proactive retention strategies that can save millions in revenue.
+This project presents a **comprehensive benchmark study** of **14 classification algorithms** for predicting customer churn in the telecommunications industry. Customer churn prediction is a critical business problem—identifying at-risk customers enables proactive retention strategies that can save millions in revenue.
 
-### 🎯 Project Objectives
-
-1. **Systematic Comparison**: Evaluate multiple classifier families (Tree-based, Ensemble, Distance/Kernel, Probabilistic/Neural) under identical conditions
-2. **Rigorous Evaluation**: Use industry-standard metrics (Accuracy, F1-Score, ROC-AUC) for fair comparison
-3. **Visual Analysis**: Generate interpretable visualizations (ROC curves, bar charts) to communicate findings
-4. **Actionable Recommendations**: Identify the best-performing model for real-world deployment
 
 ### 🔬 Methodology
 
@@ -166,15 +160,7 @@ We evaluated **14 classification algorithms** across **4 categories** on the Tel
 
 ---
 
-## Project Objectives
 
-1. Build a reproducible ML pipeline for churn prediction  
-2. Train and evaluate multiple classification algorithms  
-3. Compare models using standard metrics and statistical significance tests  
-4. Provide interpretable insights on feature importance  
-5. Recommend the best-performing model for business use  
-
----
 
 ## Dataset
 
@@ -198,7 +184,7 @@ Place the CSV in `data/telco_churn.csv`.
 
 ## Installation
 
-1.  **Clone the repository** (if you haven't already):
+1.  **Clone the repository **:
     ```bash
     git clone https://github.com/AntnheD/Clasification-Algorithm_comparision.git
     cd Clasification-Algorithm_comparision
@@ -217,7 +203,6 @@ Place the CSV in `data/telco_churn.csv`.
 
 4.  **Dataset Setup**:
     - The dataset `WA_Fn-UseC_-Telco-Customer-Churn.csv` is located in the `data/` directory.
-    - If it's missing, download it from [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) and place it in `data/telco_churn.csv`.
 
 ## Usage
 
@@ -234,7 +219,7 @@ Place the CSV in `data/telco_churn.csv`.
     ```bash
     jupyter notebook
     ```
-    Open `analysis.ipynb` (or create a new one in `notebooks/`) to start your experiments.
+    
 
 ## Repository Structure
 
