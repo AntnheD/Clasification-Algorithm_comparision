@@ -21,8 +21,7 @@
 | 4 | Yabsra Abera | ATE/1291/14 |
 
 **Course:** Big Data & Machine Learning  
-**Instructor:** `[Instructor Name]`  
-**Submission Date:** December 2024  
+ 
 
 ---
 
